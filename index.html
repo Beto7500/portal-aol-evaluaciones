@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#8b2b18" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Portal de Evaluaciones Docentes – Ingeniería AOL</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="card hero">
+      <div class="eyebrow">ANÁHUAC ONLINE · INGENIERÍA</div>
+      <h1>Portal de Evaluaciones Docentes</h1>
+      <p class="lead">Consulta tus evaluaciones del periodo. El archivo permanece protegido por Microsoft 365.</p>
+      <form id="lookupForm" autocomplete="off">
+        <label for="period">Periodo</label>
+        <select id="period" required></select>
+        <label for="email">Correo institucional</label>
+        <input id="email" type="email" inputmode="email" placeholder="nombre@anahuac.mx" required />
+        <button type="submit">Consultar evaluaciones</button>
+      </form>
+      <div id="status" class="status" aria-live="polite"></div>
+      <div id="result" class="result hidden"></div>
+    </section>
+    <footer>
+      <span>Coordinación Académica · Ingeniería AOL</span>
+      <span>El acceso final es validado por Microsoft 365.</span>
+    </footer>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
