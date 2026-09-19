@@ -1,0 +1,9 @@
+{
+  "name":"Portal de Evaluaciones Docentes – Ingeniería AOL",
+  "short_name":"Evaluaciones AOL",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f4f2ef",
+  "theme_color":"#8b2b18",
+  "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
