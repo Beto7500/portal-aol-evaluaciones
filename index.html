@@ -3,33 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#8b2b18" />
+  <meta name="theme-color" content="#ff5a00" />
   <meta name="robots" content="noindex,nofollow" />
   <title>Portal de Evaluaciones Docentes – Ingeniería AOL</title>
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20260921-4" />
 </head>
 <body>
   <main class="shell">
     <section class="card hero">
+      <div class="topbar"></div>
+
+      <div class="logoWrap" aria-label="Anáhuac">
+        <svg class="portalLogo" viewBox="0 0 240 240" role="img" aria-label="Logo Anáhuac">
+          <g opacity=".16" fill="#b8b8b8">
+            <rect x="20" y="86" width="142" height="20" rx="2" transform="rotate(-45 20 86)"/>
+            <rect x="48" y="114" width="142" height="20" rx="2" transform="rotate(-45 48 114)"/>
+            <rect x="76" y="142" width="142" height="20" rx="2" transform="rotate(-45 76 142)"/>
+            <rect x="104" y="170" width="142" height="20" rx="2" transform="rotate(-45 104 170)"/>
+          </g>
+          <text x="120" y="185" text-anchor="middle"
+                font-family="Georgia,Times New Roman,serif"
+                font-size="178" font-weight="900"
+                fill="#ff5a00" stroke="#050505" stroke-width="12"
+                paint-order="stroke fill">A</text>
+        </svg>
+      </div>
+
       <div class="eyebrow">ANÁHUAC ONLINE · INGENIERÍA</div>
       <h1>Portal de Evaluaciones Docentes</h1>
-      <p class="lead">Consulta tus evaluaciones del periodo. El archivo permanece protegido por Microsoft 365.</p>
+
       <form id="lookupForm" autocomplete="off">
         <label for="period">Periodo</label>
         <select id="period" required></select>
+
         <label for="email">Correo institucional</label>
         <input id="email" type="email" inputmode="email" placeholder="nombre@anahuac.mx" required />
+
         <button type="submit">Consultar evaluaciones</button>
       </form>
+
       <div id="status" class="status" aria-live="polite"></div>
       <div id="result" class="result hidden"></div>
     </section>
-    <footer>
-      <span>Coordinación Académica · Ingeniería AOL</span>
-      <span>El acceso final es validado por Microsoft 365.</span>
-    </footer>
+
+    <footer>Coordinación Académica · Ingeniería AOL</footer>
   </main>
-  <script src="app.js" defer></script>
+
+  <script src="app.js?v=20260921-4" defer></script>
 </body>
 </html>
