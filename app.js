@@ -1,3 +1,17 @@
+// Elimina parámetros de seguimiento de la URL sin recargar la página.
+(() => {
+  const u = new URL(window.location.href);
+  let changed = false;
+  for (const key of [...u.searchParams.keys()]) {
+    const k = key.toLowerCase();
+    if (k.startsWith('utm_') || k === 'source') {
+      u.searchParams.delete(key);
+      changed = true;
+    }
+  }
+  if (changed) history.replaceState(null, '', u.pathname + (u.search ? u.search : '') + u.hash);
+})();
+
 const $ = (s) => document.querySelector(s);
 let portalData = null;
 const COORD_ADMIN_HASH='173b5d161c700e33a733a9b60cbdb5111d637a7d52fd58cc2c5e8a45c19e3c10';
