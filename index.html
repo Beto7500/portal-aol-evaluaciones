@@ -3,53 +3,225 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#ff5a00" />
+  <meta name="theme-color" content="#f36f21" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>Portal de Evaluaciones Docentes – Ingeniería AOL</title>
+  <title>Portal Docente AOL – Ingeniería</title>
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css?v=20260921-4" />
+  <link rel="stylesheet" href="styles.css?v=20261003-1" />
 </head>
 <body>
-  <main class="shell">
-    <section class="card hero">
-      <div class="topbar"></div>
-
-      <div class="logoWrap" aria-label="Anáhuac">
-        <svg class="portalLogo" viewBox="0 0 240 240" role="img" aria-label="Logo Anáhuac">
-          <g opacity=".16" fill="#b8b8b8">
-            <rect x="20" y="86" width="142" height="20" rx="2" transform="rotate(-45 20 86)"/>
-            <rect x="48" y="114" width="142" height="20" rx="2" transform="rotate(-45 48 114)"/>
-            <rect x="76" y="142" width="142" height="20" rx="2" transform="rotate(-45 76 142)"/>
-            <rect x="104" y="170" width="142" height="20" rx="2" transform="rotate(-45 104 170)"/>
-          </g>
-          <text x="120" y="185" text-anchor="middle"
-                font-family="Georgia,Times New Roman,serif"
-                font-size="178" font-weight="900"
-                fill="#ff5a00" stroke="#050505" stroke-width="12"
-                paint-order="stroke fill">A</text>
+  <header class="siteHeader">
+    <div class="headerInner">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <svg class="brandMark" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 5 7 57h12l5-11h16l5 11h12L32 5Zm-4 31 4-9 4 9h-8Z" fill="currentColor"/>
         </svg>
+        <span><strong>ANÁHUAC ONLINE</strong><small>Ingeniería</small></span>
+      </a>
+      <nav>
+        <a href="#periodo">Periodo</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#evaluaciones">Evaluaciones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="heroInner">
+        <div class="heroCopy">
+          <p class="eyebrow">COORDINACIÓN ACADÉMICA · PROGRAMAS DE INGENIERÍA</p>
+          <h1>Portal Docente AOL</h1>
+          <p class="heroLead">Información operativa, lineamientos y recursos para la impartición de asignaturas de Ingeniería en Anáhuac Online.</p>
+          <div class="heroActions">
+            <a class="primaryBtn" href="#recursos">Ver recursos docentes</a>
+            <a class="secondaryBtn" href="#evaluaciones">Consultar evaluaciones</a>
+          </div>
+        </div>
+        <div class="heroPanel">
+          <span class="panelLabel">Periodo vigente</span>
+          <strong>202685</strong>
+          <span>28 septiembre – 1 noviembre 2026</span>
+          <hr/>
+          <p>Material de apoyo administrado por la Coordinación Académica de Ingeniería AOL.</p>
+        </div>
       </div>
-
-      <div class="eyebrow">ANÁHUAC ONLINE · INGENIERÍA</div>
-      <h1>Portal de Evaluaciones Docentes</h1>
-
-      <form id="lookupForm" autocomplete="off">
-        <label for="period">Periodo</label>
-        <select id="period" required></select>
-
-        <label for="email">Correo institucional</label>
-        <input id="email" type="email" inputmode="email" placeholder="nombre@anahuac.mx" required />
-
-        <button type="submit">Consultar evaluaciones</button>
-      </form>
-
-      <div id="status" class="status" aria-live="polite"></div>
-      <div id="result" class="result hidden"></div>
     </section>
 
-    <footer>Coordinación Académica · Ingeniería AOL</footer>
+    <section id="periodo" class="section">
+      <div class="sectionHead">
+        <div>
+          <p class="sectionKicker">OPERACIÓN DOCENTE</p>
+          <h2>Lo esencial del periodo</h2>
+        </div>
+        <a class="textLink" target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:f:/g/personal/alberto_rodriguezmo_anahuac_mx/IgD12jC-sjEYRIK6PGHgcRRWAUebscXbpiBaKxVBrQnqZ_w">Abrir repositorio documental →</a>
+      </div>
+
+      <div class="noticeGrid">
+        <article class="notice"><span>01</span><h3>Calificaciones</h3><p>Procura mantenerlas actualizadas el lunes. En la última semana, concluye la evaluación el lunes y evita espacios vacíos o guiones.</p></article>
+        <article class="notice"><span>02</span><h3>Sesión síncrona</h3><p>Realiza al menos una por semana, preferentemente en Teams, grábala y registra la liga para respaldo.</p></article>
+        <article class="notice"><span>03</span><h3>Entregas</h3><p>El cierre ordinario es el domingo a las 23:00 h. Si no existe entrega, registra 0 y deja constancia en la retroalimentación.</p></article>
+        <article class="notice"><span>04</span><h3>Prórrogas</h3><p>No prometas extensiones directamente. Las situaciones extraordinarias siguen el procedimiento institucional correspondiente.</p></article>
+      </div>
+
+      <div class="quickBar">
+        <a target="_blank" rel="noopener" href="https://anahuaconline.brightspace.com/">Brightspace</a>
+        <a target="_blank" rel="noopener" href="https://teams.microsoft.com/">Microsoft Teams</a>
+        <a target="_blank" rel="noopener" href="https://forms.monday.com/forms/62bd130655bb0275c47e7b7914a255df?r=use1">Registrar grabación</a>
+        <a target="_blank" rel="noopener" href="https://pagoprofesores.redanahuac.mx/">Pago a profesores</a>
+      </div>
+    </section>
+
+    <section id="recursos" class="section alt">
+      <div class="sectionHead">
+        <div>
+          <p class="sectionKicker">RECURSOS PROPIOS</p>
+          <h2>Documentos para docentes de Ingeniería</h2>
+          <p class="sectionIntro">Estas versiones se conservan en el repositorio de Ingeniería AOL. Ya no dependen de la página de Notion ni de los documentos de otras coordinaciones.</p>
+        </div>
+      </div>
+
+      <div class="resourceGrid">
+        <article class="resourceCard">
+          <div class="resourceNo">01</div>
+          <h3>Guía operativa docente</h3>
+          <p>Reglas de operación, calificación, cierre, equipos, sesiones síncronas, Turnitin e IA.</p>
+          <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:w:/g/personal/alberto_rodriguezmo_anahuac_mx/IQBfky89khN6RqkUoiqkXb6fAc_iXDJo0AZr2-KM3d4IoVc">Abrir guía</a>
+        </article>
+
+        <article class="resourceCard">
+          <div class="resourceNo">02</div>
+          <h3>Sesiones síncronas</h3>
+          <p>Frecuencia, duración, plataforma, grabación y seguimiento de las sesiones.</p>
+          <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:w:/g/personal/alberto_rodriguezmo_anahuac_mx/IQBDNHPQ8RHiS6leHcygQLTYAdUBvxLEUqphKz2H2NPmYB4">Abrir lineamientos</a>
+          <a class="subLink" target="_blank" rel="noopener" href="https://forms.monday.com/forms/62bd130655bb0275c47e7b7914a255df?r=use1">Registrar grabación en Monday</a>
+        </article>
+
+        <article class="resourceCard">
+          <div class="resourceNo">03</div>
+          <h3>Comunicación con alumnos</h3>
+          <p>Plantillas adaptables para bienvenida, foro, no entrega, aclaraciones, equipos y cierre.</p>
+          <div class="linkStack">
+            <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:w:/g/personal/alberto_rodriguezmo_anahuac_mx/IQDJfblJfPVzS42Y66G_OHYCAVV4-6hSNgio0F2UNDcZ97I">Bienvenida</a>
+            <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:w:/g/personal/alberto_rodriguezmo_anahuac_mx/IQBMUvRZXNkxSZUB9huVglpHATmbTzkGhI8knxxDc21CfJo">Foro de presentación</a>
+            <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:w:/g/personal/alberto_rodriguezmo_anahuac_mx/IQBLUgNTi7__QLN2tp0JsDtUAaRncKhlU45rMvX2zKR8aUU">Aclaración / no entrega</a>
+            <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:w:/g/personal/alberto_rodriguezmo_anahuac_mx/IQCNYz9deBHNTJwWqQbEfmfkAQLGxjjrtxDLgTRbnr2yvSk">Equipos y evaluación</a>
+          </div>
+        </article>
+
+        <article class="resourceCard">
+          <div class="resourceNo">04</div>
+          <h3>Retroalimentación y evaluación</h3>
+          <p>Rúbricas, Regla de las 3A, Turnitin, originalidad, aclaraciones y cierre de calificaciones.</p>
+          <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:t:/g/personal/alberto_rodriguezmo_anahuac_mx/IQDL3WsWW3cLTp6XMoh-00GbAXM1KsOWHj1qVEeD-Zrofhg">Abrir guía</a>
+          <a class="subLink" target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQAT8bTSp1nvQKxS1Ite4WgVAVTWKcUGUtmGyL9SuaWtWAE">Ver Regla de las 3A</a>
+        </article>
+
+        <article class="resourceCard featured">
+          <div class="resourceNo">05</div>
+          <span class="badge">INGENIERÍA</span>
+          <h3>Uso ético de Inteligencia Artificial</h3>
+          <p>Lineamientos de IA y verificación de originalidad para Ingenierías Anáhuac Online.</p>
+          <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:b:/g/personal/alberto_rodriguezmo_anahuac_mx/IQBZjsunUw07QYMai-zCfZy1AXKeHhsHWoSx0UdDxY2OWJs">Consultar lineamientos</a>
+        </article>
+
+        <article class="resourceCard">
+          <div class="resourceNo">06</div>
+          <h3>Inducción docente</h3>
+          <p>Material propio para profesores titulares y tutores que se incorporan a Ingeniería AOL.</p>
+          <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:p:/g/personal/alberto_rodriguezmo_anahuac_mx/IQBJjqNYLRv0SJrsMU4AGNMfAd1O-U9IBR_rkTB72pN1gGA">Abrir taller</a>
+          <a class="subLink" target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:t:/g/personal/alberto_rodriguezmo_anahuac_mx/IQBA8lPuEBPgSIKpSMhlZU7_Ae4cvUXUwK7WYATp8K8lTuY">Checklist para docente nuevo</a>
+        </article>
+
+        <article class="resourceCard">
+          <div class="resourceNo">07</div>
+          <h3>Calendario de arranques 2026</h3>
+          <p>Periodos AOL y fechas de inicio y cierre para licenciatura durante 2026.</p>
+          <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQChZ5FgScR2QLYlYT55bOgDAegktv_mROI5gMrmsCHBfmY">Ver calendario</a>
+        </article>
+
+        <article class="resourceCard">
+          <div class="resourceNo">08</div>
+          <h3>Pagos y procesos</h3>
+          <p>Información de referencia, calendario institucional y tabulador docente 2026.</p>
+          <div class="linkStack">
+            <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:w:/g/personal/alberto_rodriguezmo_anahuac_mx/IQAHfEuach_9TrAyfgY1haYEAVE3kWdS_e3Lyu56FOdnIaE">Información de pago</a>
+            <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQAYPGrkUZnOSKgKOfMfcLjVAc_w7NBk2_h4pYp3FdO9aIc">Calendario de pagos</a>
+            <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQCMUVB4dYesQ6Q8MOYITFzkAYrUEWK_EaAkLi2Zz9E5Tv0">Tabulador docente</a>
+          </div>
+        </article>
+
+        <article class="resourceCard">
+          <div class="resourceNo">09</div>
+          <h3>Guías rápidas</h3>
+          <p>Material visual para consultar rápidamente las actividades del periodo y la retroalimentación.</p>
+          <a target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQCkUQdH1hY0So9-8f9RPjv6AQzlDpWT7Eo74Man-6eonVU">Actividades 202685</a>
+          <a class="subLink" target="_blank" rel="noopener" href="https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQAT8bTSp1nvQKxS1Ite4WgVAVTWKcUGUtmGyL9SuaWtWAE">Regla de las 3A</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section liveSection">
+      <div class="sectionHead">
+        <div>
+          <p class="sectionKicker">SISTEMAS INSTITUCIONALES</p>
+          <h2>Enlaces que deben permanecer vivos</h2>
+          <p class="sectionIntro">Estos servicios no se copian porque requieren autenticación u operación en sus plataformas originales.</p>
+        </div>
+      </div>
+      <div class="liveGrid">
+        <a target="_blank" rel="noopener" href="https://anahuaconline.brightspace.com/"><strong>Brightspace</strong><span>Curso, calificaciones y comunicación</span></a>
+        <a target="_blank" rel="noopener" href="https://forms.monday.com/forms/62bd130655bb0275c47e7b7914a255df?r=use1"><strong>Respaldo de sesiones</strong><span>Formulario institucional de Monday</span></a>
+        <a target="_blank" rel="noopener" href="https://teams.microsoft.com/"><strong>Microsoft Teams</strong><span>Sesiones síncronas</span></a>
+        <a target="_blank" rel="noopener" href="https://pagoprofesores.redanahuac.mx/"><strong>Pago a profesores</strong><span>Plataforma institucional</span></a>
+        <a href="mailto:soporte@anahuaconline.zendesk.com"><strong>Soporte AOL</strong><span>soporte@anahuaconline.zendesk.com</span></a>
+      </div>
+    </section>
+
+    <section id="evaluaciones" class="section evalSection">
+      <div class="evalCard">
+        <div class="evalIntro">
+          <p class="sectionKicker">EVALUACIÓN DOCENTE</p>
+          <h2>Consulta tus evaluaciones</h2>
+          <p>Acceso individual a las evaluaciones disponibles. La configuración y los permisos existentes se conservan sin cambios.</p>
+          <span class="availableTag">Disponible: periodo 202652</span>
+        </div>
+
+        <div class="evalFormWrap">
+          <form id="lookupForm" autocomplete="off">
+            <label for="period">Periodo</label>
+            <select id="period" required></select>
+
+            <label for="email">Correo institucional</label>
+            <input id="email" type="email" inputmode="email" placeholder="nombre@anahuac.mx" required />
+
+            <button type="submit">Consultar evaluaciones</button>
+          </form>
+
+          <div id="status" class="status" aria-live="polite"></div>
+          <div id="result" class="result hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contactSection">
+      <div class="contactCard">
+        <div>
+          <p class="sectionKicker">COORDINACIÓN ACADÉMICA</p>
+          <h2>Programas de Ingeniería AOL</h2>
+          <p>Para asuntos académicos, incidencias del periodo o seguimiento docente utiliza el correo institucional.</p>
+        </div>
+        <a href="mailto:alberto.rodriguezmo@anahuac.mx"><strong>Dr. Luis Alberto Rodríguez Morales</strong><span>alberto.rodriguezmo@anahuac.mx</span></a>
+      </div>
+    </section>
   </main>
 
-  <script src="app.js?v=20260921-4" defer></script>
+  <footer class="siteFooter">
+    <span>ANÁHUAC ONLINE · INGENIERÍA</span>
+    <span>Portal de apoyo docente</span>
+  </footer>
+
+  <script src="app.js?v=20261003-1" defer></script>
 </body>
 </html>
