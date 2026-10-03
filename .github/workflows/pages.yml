@@ -23,6 +23,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+
+      - name: Prepare visual assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets
+          curl -L --fail --retry 3 -o assets/logo-aol.png 'https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQDYQW3egIBDSoiVXmBciDS_AXPzE9hUO7piOhF9z9lifpA?download=1'
+          curl -L --fail --retry 3 -o assets/leonel.png 'https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQDIZKNCeKckTZdCFqzWO6mrAeJdNVIl3wQr3K5CCvKevqQ?download=1'
+          curl -L --fail --retry 3 -o assets/calendario-arranques.png 'https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQChZ5FgScR2QLYlYT55bOgDAV0hbLXbBVWipEvXvddIMAU?download=1'
+          curl -L --fail --retry 3 -o assets/guia-rapida-202685.png 'https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQBAfnrGBVaxRaHKwqOfhEIXAWLfQa3Hp86sSoy0unz5N5g?download=1'
+          curl -L --fail --retry 3 -o assets/regla-3a.png 'https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQCl6uGoLwJQRYQeBOEYPJJbAdCJhhhJIcH1Wbfme2fh_1k?download=1'
+          curl -L --fail --retry 3 -o assets/calendario-pagos.png 'https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQAYPGrkUZnOSKgKOfMfcLjVAYKf4t5c12ReeO14sPNEUN8?download=1'
+          curl -L --fail --retry 3 -o assets/tabulador.png 'https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQCMUVB4dYesQ6Q8MOYITFzkAZCn5e90N3q3Jikx7MuDfRQ?download=1'
+          curl -L --fail --retry 3 -o assets/viridiana.jpeg 'https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQAO74EnRn3fTqf1L50Df7sGAQD9s_5wbMpXAePO8S3dp3M?download=1'
+          curl -L --fail --retry 3 -o assets/luis.jpeg 'https://redanahuac-my.sharepoint.com/:i:/g/personal/alberto_rodriguezmo_anahuac_mx/IQB5zw_vnlfRRbreamKGUCwZAaBpKYQuLMdE_E4MQNQ5zxA?download=1'
+          file assets/*
+          test "$(stat -c%s assets/logo-aol.png)" -gt 1000
+          test "$(stat -c%s assets/leonel.png)" -gt 1000
+          test "$(stat -c%s assets/guia-rapida-202685.png)" -gt 1000
+          test "$(stat -c%s assets/regla-3a.png)" -gt 1000
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site
