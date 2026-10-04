@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="t d">
+<title id="t">Leonel</title><desc id="d">Ilustración vectorial de un león universitario con playera negra y A naranja.</desc>
+<defs>
+ <radialGradient id="bg" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#5b4031"/><stop offset="1" stop-color="#1f1a17"/></radialGradient>
+ <radialGradient id="mane" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#f8ae3d"/><stop offset="1" stop-color="#c96a16"/></radialGradient>
+ <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7be68"/><stop offset="1" stop-color="#e49634"/></linearGradient>
+</defs>
+<rect width="800" height="1000" rx="38" fill="url(#bg)"/>
+<ellipse cx="400" cy="340" rx="255" ry="250" fill="url(#mane)"/>
+<circle cx="233" cy="200" r="78" fill="#d77922"/><circle cx="567" cy="200" r="78" fill="#d77922"/>
+<circle cx="238" cy="205" r="43" fill="#f3b65c"/><circle cx="562" cy="205" r="43" fill="#f3b65c"/>
+<ellipse cx="400" cy="330" rx="185" ry="205" fill="url(#fur)"/>
+<ellipse cx="338" cy="306" rx="18" ry="25" fill="#221b18"/><ellipse cx="462" cy="306" rx="18" ry="25" fill="#221b18"/>
+<ellipse cx="400" cy="370" rx="70" ry="54" fill="#f8d39a"/><path d="M375 355q25-22 50 0-8 28-25 28t-25-28Z" fill="#3a2922"/>
+<path d="M400 382q-2 38-42 42M400 382q2 38 42 42" fill="none" stroke="#5c3a2d" stroke-width="10" stroke-linecap="round"/>
+<path d="M270 510q130-70 260 0l55 360q-185 90-370 0l55-360Z" fill="#171717"/>
+<path d="M400 565 320 740h47l18-42h30l18 42h47L400 565Zm0 84 12 28h-24l12-28Z" fill="#f36f21"/>
+<path d="M270 535q-68 40-82 175" fill="none" stroke="#e99a3b" stroke-width="64" stroke-linecap="round"/>
+<path d="M530 535q68 40 82 175" fill="none" stroke="#e99a3b" stroke-width="64" stroke-linecap="round"/>
+<ellipse cx="315" cy="895" rx="72" ry="38" fill="#e99a3b"/><ellipse cx="485" cy="895" rx="72" ry="38" fill="#e99a3b"/>
+</svg>
