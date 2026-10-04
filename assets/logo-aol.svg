@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" role="img" aria-labelledby="t d">
+<title id="t">Anáhuac Online</title><desc id="d">Identidad visual para el Portal Docente AOL de Ingeniería.</desc>
+<rect width="1000" height="240" fill="none"/>
+<g transform="translate(20 22)">
+  <path d="M95 0 190 190h-45l-20-42H65l-20 42H0L95 0Zm0 70-19 41h38L95 70Z" fill="#f36f21"/>
+  <path d="M137 24h42l-32 65-22-45 12-20Z" fill="#d95a12"/>
+</g>
+<g fill="#24201e" font-family="Arial, Helvetica, sans-serif">
+  <text x="245" y="105" font-size="76" font-weight="800" letter-spacing="1">ANÁHUAC</text>
+  <text x="248" y="172" font-size="54" font-weight="500" letter-spacing="12">ONLINE</text>
+</g>
+<rect x="245" y="194" width="565" height="8" rx="4" fill="#f36f21"/>
+</svg>
