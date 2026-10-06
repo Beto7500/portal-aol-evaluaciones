@@ -95,3 +95,9 @@ button:hover,.buttonLink:hover{background:var(--orangeDark)}.status{min-height:1
 .paymentWarning strong,.paymentWarning span{color:#ff914d}
 @media(max-width:900px){.paymentHero{grid-template-columns:1fr}}
 @media(max-width:720px){.paymentMain,.paymentAside{padding:21px}.paymentWarning{padding:16px}}
+
+.paymentPoster{background:linear-gradient(145deg,#fff 0%,#fff8f2 100%);border-color:#f0d5c3}
+.paymentPoster>a{padding:24px;background:#f4f0ec;display:flex;justify-content:center}
+.paymentPoster img{width:min(100%,620px)!important;height:auto!important;max-height:none!important;margin:0 auto;background:#fff;box-shadow:0 8px 26px rgba(45,30,22,.10)}
+.paymentPoster figcaption{padding:18px 22px 21px}
+@media(max-width:720px){.paymentPoster>a{padding:10px}.paymentPoster img{width:100%!important}}
