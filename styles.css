@@ -101,3 +101,11 @@ button:hover,.buttonLink:hover{background:var(--orangeDark)}.status{min-height:1
 .paymentPoster img{width:min(100%,620px)!important;height:auto!important;max-height:none!important;margin:0 auto;background:#fff;box-shadow:0 8px 26px rgba(45,30,22,.10)}
 .paymentPoster figcaption{padding:18px 22px 21px}
 @media(max-width:720px){.paymentPoster>a{padding:10px}.paymentPoster img{width:100%!important}}
+
+/* Calendarios académicos 2026–2027: tarjetas a tamaño natural */
+.calendarPoster{border-color:#e9d4c6;transition:box-shadow .2s ease,transform .2s ease}
+.calendarPoster:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(69,44,29,.12)}
+.calendarPoster a{overflow:hidden;display:block}
+.calendarPoster img{width:100%;height:auto!important;max-height:none!important;aspect-ratio:4/3;object-fit:cover;transition:transform .25s ease}
+.calendarPoster a:hover img{transform:scale(1.015)}
+.calendarPoster figcaption strong{font-size:1.06rem}
