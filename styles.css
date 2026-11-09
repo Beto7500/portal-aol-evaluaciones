@@ -109,3 +109,13 @@ button:hover,.buttonLink:hover{background:var(--orangeDark)}.status{min-height:1
 .calendarPoster img{width:100%;height:auto!important;max-height:none!important;aspect-ratio:4/3;object-fit:cover;transition:transform .25s ease}
 .calendarPoster a:hover img{transform:scale(1.015)}
 .calendarPoster figcaption strong{font-size:1.06rem}
+
+
+/* Guia breve vigente del periodo 202692: reemplaza el cartel obsoleto de 202685. */
+.quickGuidePoster{height:420px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;padding:30px 34px;background:linear-gradient(145deg,#fff8f2 0%,#ffeedf 58%,#ffd8bb 100%);color:#34231b}
+.quickGuideEyebrow{margin:0 0 6px;font-size:.74rem;font-weight:850;letter-spacing:.16em;color:#a54918}
+.quickGuidePeriod{display:block;font-size:clamp(3.5rem,6vw,5.2rem);font-weight:900;line-height:1.04;letter-spacing:-.06em;color:#b7460b}
+.quickGuideDates{margin:5px 0 0;font-size:1rem;font-weight:760}
+.quickGuideItems{margin:18px 0 0;padding-left:19px;font-size:.89rem;line-height:1.4}
+.quickGuideItems li{margin-bottom:8px}
+@media(max-width:720px){.quickGuidePoster{height:auto;min-height:420px;padding:27px 24px}.quickGuidePeriod{font-size:4rem}}
